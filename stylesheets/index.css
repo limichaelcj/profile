@@ -1,0 +1,111 @@
+@import url("stylesheets/info-card.css");
+
+html {
+  font-size: 100%; /* 10px */
+}
+
+body {
+  font-family: "Montserrat", "Open Sans", Arial, monospace;
+  background-color: hsl(211, 28%, 54%);
+  color: #222;
+}
+
+/* TAGS */
+
+table {
+  border-collapse: separate;
+  border-spacing: 0 1rem;
+  font-family: "Work Sans", Arial, monospace;
+}
+
+table img {
+  box-shadow: 1px 1px 10px silver;
+}
+
+td {
+  padding: 1rem 2rem;
+}
+
+em {
+  font-size: 1.3em;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/* LAYOUT */
+
+.bs-col {
+  margin: 0;
+  padding: 0 0.6rem;
+  position: relative;
+}
+
+/* COMPONENTS */
+
+#info-card {
+  width: 100%;
+  padding: 1rem;
+}
+
+#info-card > * {
+  display: block;
+  text-align: center;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#info-card h1 {
+  margin: 0.7rem auto;
+}
+
+#info-card a {
+  color: hsl(211, 34%, 48%);
+}
+#info-card a:hover {
+  color: hsl(156, 86%, 28%);
+  font-weight: bold;
+}
+
+.card {
+  margin-bottom: 1rem;
+}
+
+/* PATTERNS */
+
+.bg-white {
+  background-color: #f0f0f0;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.img-300 {
+  max-width: 300px;
+  width: 10vw;
+  min-width: 200px;
+  height: auto;
+}
+
+.padding-text {
+  padding: 1em 2em;
+}
+.padding-sm {
+  padding: 1rem;
+}
+.margin-sm {
+  margin: 1rem;
+}
+
+@media (min-width: 1200px) {
+  #info-card {
+    position: sticky;
+    top: 0;
+  }
+}
